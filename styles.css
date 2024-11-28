@@ -1,80 +1,77 @@
 :root {
-    --primary-color: #6C5B7B; /* Rich Violet */
-    --secondary-color: #F2E9E4; /* Soft Beige */
-    --accent-color: #F67280; /* Coral Red */
-    --text-color: #2A2A2A; /* Dark Charcoal */
-    --background-color: #F7F7F7; /* Light Gray */
+    --primary-color: #FAD643; /* New primary accent color */
+    --secondary-color: #C9A227; /* Gold tone for highlights */
+    --background-color: #FFE169; /* Soft yellow for sections or backgrounds */
+    --text-color-dark: #76520E; /* Contrast-friendly text */
+    --text-color-light: #FFFFFF; /* For text on dark backgrounds */
 }
 
-/* General Styling */
+/* General Styles */
 body {
-    font-family: 'Noto Serif', serif;
-    color: var(--text-color);
     background-color: var(--background-color);
-    line-height: 1.8;
+    color: var(--text-color-dark);
+    font-family: 'Libre Baskerville', serif;
 }
 
-/* Headings */
-h1, h2, h3 {
-    color: var(--primary-color);
-    margin: 1rem 0;
-}
-
-/* Paragraphs */
-p {
-    color: var(--text-color);
-    margin-bottom: 1rem;
+/* Header */
+header {
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    padding: 1rem;
+    text-align: center;
 }
 
 /* Buttons */
-button {
-    background-color: var(--accent-color);
-    color: #FFFFFF;
+button, .btn {
+    background-color: var(--secondary-color);
+    color: var(--text-color-light);
     border: none;
     padding: 0.5rem 1rem;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-button:hover {
-    background-color: var(--primary-color);
+button:hover, .btn:hover {
+    background-color: var(--text-color-dark);
+    color: var(--text-color-light);
 }
 
 /* Links */
 a {
-    color: var(--accent-color);
+    color: var(--secondary-color);
     text-decoration: none;
 }
 
 a:hover {
-    color: var(--primary-color);
+    color: var(--text-color-dark);
 }
 
-/* Card Styling */
-.card {
-    background-color: var(--secondary-color);
-    color: var(--text-color);
-    padding: 1rem;
+/* Section Highlights */
+section {
+    background-color: var(--primary-color);
+    color: var(--text-color-dark);
+    padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
 /* Footer */
 footer {
-    background-color: var(--primary-color);
-    color: #FFFFFF;
+    background-color: var(--text-color-dark);
+    color: var(--text-color-light);
     text-align: center;
-    padding: 1rem 0;
-    font-size: 0.9rem;
+    padding: 1rem;
 }
 
-footer a {
-    color: var(--accent-color);
-    text-decoration: none;
+/* Cards */
+.card {
+    background-color: var(--background-color);
+    border: 2px solid var(--secondary-color);
+    border-radius: 10px;
+    padding: 1rem;
+    color: var(--text-color-dark);
+}
+
+.card:hover {
+    background-color: var(--secondary-color);
+    color: var(--text-color-light);
 }
