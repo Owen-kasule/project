@@ -1,71 +1,80 @@
-/* Root Variables */
 :root {
-    --primary-color: #8C6D1F; /* Better contrast for headings and accents */
-    --secondary-color: #BBA95F; /* Improved for section backgrounds */
-    --accent-color: #856404; /* Stronger highlight color */
-    --background-color: #FBF3D1; /* Maintain soft contrast for the background */
-    --text-color: #1D1D1D; /* Darker text for legibility */
+    --primary-color: #6C5B7B; /* Rich Violet */
+    --secondary-color: #F2E9E4; /* Soft Beige */
+    --accent-color: #F67280; /* Coral Red */
+    --text-color: #2A2A2A; /* Dark Charcoal */
+    --background-color: #F7F7F7; /* Light Gray */
 }
 
-
-/* Base Styles */
+/* General Styling */
 body {
-    font-family: 'Merriweather', serif;
-    background-color: var(--background-color);
+    font-family: 'Noto Serif', serif;
     color: var(--text-color);
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
+    background-color: var(--background-color);
+    line-height: 1.8;
 }
 
-header {
-    background-color: var(--primary-color);
-    color: white;
-    text-align: center;
-    padding: 1rem;
-}
-
-header h1 {
-    font-family: 'Libre Baskerville', serif;
-    margin: 0;
-}
-
-section {
-    padding: 1rem 2rem;
-    margin: 1rem auto;
-    background: var(--secondary-color);
-    border-radius: 8px;
-    max-width: 800px;
-}
-
-h2 {
-    font-family: 'Libre Baskerville', serif;
+/* Headings */
+h1, h2, h3 {
     color: var(--primary-color);
-    margin-bottom: 0.5rem;
+    margin: 1rem 0;
 }
 
-p, ul {
-    margin: 0.5rem 0;
+/* Paragraphs */
+p {
+    color: var(--text-color);
+    margin-bottom: 1rem;
 }
 
-ul {
-    padding-left: 1.5rem;
+/* Buttons */
+button {
+    background-color: var(--accent-color);
+    color: #FFFFFF;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-img {
-    width: 100%;
-    max-width: 600px;
-    display: block;
-    margin: 1rem auto;
+button:hover {
+    background-color: var(--primary-color);
 }
 
+/* Links */
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+/* Card Styling */
+.card {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer */
 footer {
     background-color: var(--primary-color);
+    color: #FFFFFF;
     text-align: center;
-    color: white;
-    padding: 1rem;
+    padding: 1rem 0;
+    font-size: 0.9rem;
 }
 
-footer p {
-    margin: 0;
+footer a {
+    color: var(--accent-color);
+    text-decoration: none;
 }
