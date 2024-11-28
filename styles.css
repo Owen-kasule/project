@@ -1,11 +1,12 @@
 /* Root Variables */
 :root {
-    --primary-color: #C9AB42; /* Improved for contrast */
-    --secondary-color: #D9C46A; /* Adjusted for readability */
-    --accent-color: #E8D8A2; /* Softer highlight */
-    --background-color: #FBF3D1; /* Slightly adjusted for balance */
-    --text-color: #2A313C; /* Better legibility */
+    --primary-color: #8C6D1F; /* Better contrast for headings and accents */
+    --secondary-color: #BBA95F; /* Improved for section backgrounds */
+    --accent-color: #856404; /* Stronger highlight color */
+    --background-color: #FBF3D1; /* Maintain soft contrast for the background */
+    --text-color: #1D1D1D; /* Darker text for legibility */
 }
+
 
 /* Base Styles */
 body {
