@@ -1,9 +1,10 @@
 :root {
-    --primary-color: #FAD643; /* New primary accent color */
-    --secondary-color: #C9A227; /* Gold tone for highlights */
+    --primary-color: #C9A227; /* Dominant gold tone */
+    --secondary-color: #76520E; /* Dark brown for text and accents */
+    --accent-color: #FAD643; /* Minimal highlight color */
     --background-color: #FFE169; /* Soft yellow for sections or backgrounds */
-    --text-color-dark: #76520E; /* Contrast-friendly text */
-    --text-color-light: #FFFFFF; /* For text on dark backgrounds */
+    --text-color-dark: #4A3225; /* Strong contrast text color */
+    --text-color-light: #FFFFFF; /* For light text on dark backgrounds */
 }
 
 /* General Styles */
@@ -21,6 +22,11 @@ header {
     text-align: center;
 }
 
+/* Header Logo/Title Accent */
+header h1 span {
+    color: var(--accent-color); /* Minimal use of FAD643 for title accent */
+}
+
 /* Buttons */
 button, .btn {
     background-color: var(--secondary-color);
@@ -29,11 +35,12 @@ button, .btn {
     padding: 0.5rem 1rem;
     font-weight: bold;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 button:hover, .btn:hover {
-    background-color: var(--text-color-dark);
-    color: var(--text-color-light);
+    background-color: var(--accent-color); /* Use FAD643 only for hover states */
+    color: var(--text-color-dark);
 }
 
 /* Links */
@@ -43,35 +50,66 @@ a {
 }
 
 a:hover {
-    color: var(--text-color-dark);
+    color: var(--accent-color); /* Highlight links subtly */
 }
 
 /* Section Highlights */
 section {
-    background-color: var(--primary-color);
+    background-color: var(--background-color);
     color: var(--text-color-dark);
     padding: 2rem;
     border-radius: 10px;
 }
 
-/* Footer */
-footer {
-    background-color: var(--text-color-dark);
-    color: var(--text-color-light);
-    text-align: center;
-    padding: 1rem;
-}
-
 /* Cards */
 .card {
     background-color: var(--background-color);
-    border: 2px solid var(--secondary-color);
+    border: 2px solid var(--primary-color);
     border-radius: 10px;
     padding: 1rem;
     color: var(--text-color-dark);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .card:hover {
+    background-color: var(--accent-color); /* Subtle highlight on hover */
+    color: var(--text-color-dark);
+}
+
+/* Footer */
+footer {
     background-color: var(--secondary-color);
     color: var(--text-color-light);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
 }
+
+footer a {
+    color: var(--accent-color);
+}
+
+footer a:hover {
+    color: var(--text-color-light);
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: var(--primary-color);
+}
+
+h1 span, h2 span {
+    color: var(--accent-color); /* Accent on specific parts of headings */
+}
+
+/* Cards Title Accent */
+.card-title {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.card-title span {
+    color: var(--accent-color); /* Subtle highlight for specific words */
+}
+
+/* Minimal use of FAD643 across layout */
