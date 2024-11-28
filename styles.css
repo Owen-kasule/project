@@ -1,0 +1,70 @@
+/* Root Variables */
+:root {
+    --primary-color: #F9DC5C; /* Headings, Buttons */
+    --secondary-color: #FAE588; /* Section Backgrounds */
+    --accent-color: #FCEFB4; /* Links and Highlights */
+    --background-color: #FDF8E1; /* Page Background */
+    --text-color: #2D3748; /* Text Content */
+}
+
+/* Base Styles */
+body {
+    font-family: 'Merriweather', serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    font-family: 'Libre Baskerville', serif;
+    margin: 0;
+}
+
+section {
+    padding: 1rem 2rem;
+    margin: 1rem auto;
+    background: var(--secondary-color);
+    border-radius: 8px;
+    max-width: 800px;
+}
+
+h2 {
+    font-family: 'Libre Baskerville', serif;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+p, ul {
+    margin: 0.5rem 0;
+}
+
+ul {
+    padding-left: 1.5rem;
+}
+
+img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 1rem auto;
+}
+
+footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    color: white;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
