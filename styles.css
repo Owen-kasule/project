@@ -1,10 +1,10 @@
 /* Root Variables */
 :root {
-    --primary-color: #F9DC5C; /* Headings, Buttons */
-    --secondary-color: #FAE588; /* Section Backgrounds */
-    --accent-color: #FCEFB4; /* Links and Highlights */
-    --background-color: #FDF8E1; /* Page Background */
-    --text-color: #2D3748; /* Text Content */
+    --primary-color: #C9AB42; /* Improved for contrast */
+    --secondary-color: #D9C46A; /* Adjusted for readability */
+    --accent-color: #E8D8A2; /* Softer highlight */
+    --background-color: #FBF3D1; /* Slightly adjusted for balance */
+    --text-color: #2A313C; /* Better legibility */
 }
 
 /* Base Styles */
