@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 1300">
+  <rect width="375" height="1300" fill="#fff" />
+  
+  <!-- Header -->
+  <rect x="20" y="20" width="40" height="40" fill="#ccc" />
+  <text x="70" y="45" font-size="16">BeSelfless</text>
+  <rect x="315" y="20" width="40" height="40" fill="#ccc" />
+  
+  <!-- Hamburger Menu -->
+  <g transform="translate(315, 20)">
+    <rect x="0" y="0" width="40" height="40" fill="#ccc" />
+    <line x1="10" y1="15" x2="30" y2="15" stroke="#fff" stroke-width="3" />
+    <line x1="10" y1="20" x2="30" y2="20" stroke="#fff" stroke-width="3" />
+    <line x1="10" y1="25" x2="30" y2="25" stroke="#fff" stroke-width="3" />
+  </g>
+  
+  <!-- Hero Section -->
+  <rect x="20" y="80" width="335" height="220" fill="#f2f2f2" />
+  <text x="40" y="180" font-size="20">Lorem ipsum dolor sit amet</text>
+  <rect x="40" y="220" width="120" height="40" fill="#ff6b6b" />
+  <text x="55" y="245" font-size="14" fill="#fff">Join Us</text>
+  
+  <!-- About Section -->
+  <rect x="20" y="320" width="160" height="160" fill="#f2f2f2" />
+  <text x="190" y="360" font-size="16">About BeSelfless</text>
+  <text x="190" y="390" font-size="14">Lorem ipsum dolor sit amet et delectus accommodate his consul copiosae.</text>
+  <rect x="190" y="430" width="80" height="30" fill="#ff6b6b" />
+  <text x="205" y="450" font-size="12" fill="#fff">Read more</text>
+  
+  <!-- Programs Section -->
+  <text x="20" y="510" font-size="16">Our Programs</text>
+  <rect x="20" y="540" width="335" height="220" fill="#f2f2f2" />
+  <text x="40" y="580" font-size="14">Education Support</text>
+  <text x="40" y="600" font-size="12">Lorem ipsum dolor sit amet et delectus accommodate.</text>
+  <rect x="40" y="630" width="80" height="30" fill="#ff6b6b" />
+  <text x="50" y="650" font-size="12" fill="#fff">Read more</text>
+  
+  <!-- Success Stories Section -->
+  <text x="20" y="780" font-size="16">Success Stories</text>
+  <rect x="20" y="810" width="335" height="160" fill="#f2f2f2" />
+  <text x="40" y="850" font-size="14">Student Success Profile</text>
+  <text x="40" y="870" font-size="12">Lorem ipsum dolor sit amet et delectus accommodate.</text>
+  <rect x="40" y="900" width="80" height="30" fill="#ff6b6b" />
+  <text x="50" y="920" font-size="12" fill="#fff">Read more</text>
+  
+  <!-- Get Involved Section -->
+  <text x="20" y="1000" font-size="16">Get Involved</text>
+  <rect x="20" y="1030" width="335" height="50" fill="#f2f2f2" />
+  <text x="40" y="1055" font-size="14">Volunteer | Donate | Partner</text>
+  
+  <!-- Footer -->
+  <rect x="0" y="1190" width="375" height="100" fill="#f2f2f2" />
+  <text x="20" y="1215" font-size="12">© 2024 BeSelfless. All rights reserved.</text>
+  <text x="20" y="1235" font-size="12">Contact Us</text>
+  <text x="20" y="1255" font-size="12">Terms of Service</text>
+  <text x="275" y="1215" font-size="12">Privacy Policy</text>
+</svg>
