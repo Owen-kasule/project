@@ -1,115 +1,159 @@
 :root {
-    --primary-color: #C9A227; /* Dominant gold tone */
-    --secondary-color: #76520E; /* Dark brown for text and accents */
-    --accent-color: #FAD643; /* Minimal highlight color */
-    --background-color: #FFE169; /* Soft yellow for sections or backgrounds */
-    --text-color-dark: #4A3225; /* Strong contrast text color */
-    --text-color-light: #FFFFFF; /* For light text on dark backgrounds */
+    --primary-color: #F9DC5C; /* Dominant yellow tone for highlights */
+    --secondary-color: #FAE588; /* Softer yellow for backgrounds */
+    --accent-color: #4A3225; /* Dark brown for text and strong contrast */
+    --neutral-color: #FDF8E1; /* Light cream for sections */
+    --background-color: #FFFFFF; /* Clean white for primary backgrounds */
+    --text-dark: #4A3225; /* Dark text for maximum contrast */
+    --text-light: #FFFFFF; /* Light text for dark backgrounds */
 }
 
 /* General Styles */
 body {
     background-color: var(--background-color);
-    color: var(--text-color-dark);
+    color: var(--text-dark);
     font-family: 'Libre Baskerville', serif;
+    line-height: 1.6;
+    margin: 0;
 }
 
 /* Header */
 header {
     background-color: var(--primary-color);
-    color: var(--text-color-light);
+    color: var(--text-light);
     padding: 1rem;
     text-align: center;
 }
 
-/* Header Logo/Title Accent */
+header h1 {
+    font-size: 2rem;
+    color: var(--text-dark);
+}
+
 header h1 span {
-    color: var(--accent-color); /* Minimal use of FAD643 for title accent */
+    color: var(--accent-color); /* Strong contrast on key parts */
 }
 
 /* Buttons */
 button, .btn {
-    background-color: var(--secondary-color);
-    color: var(--text-color-light);
-    border: none;
+    background-color: var(--primary-color);
+    color: var(--text-dark);
+    border: 2px solid var(--accent-color);
     padding: 0.5rem 1rem;
     font-weight: bold;
     cursor: pointer;
     border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 button:hover, .btn:hover {
-    background-color: var(--accent-color); /* Use FAD643 only for hover states */
-    color: var(--text-color-dark);
+    background-color: var(--accent-color); /* Darker for hover states */
+    color: var(--text-light);
 }
 
 /* Links */
 a {
-    color: var(--secondary-color);
+    color: var(--accent-color);
     text-decoration: none;
+    font-weight: bold;
 }
 
 a:hover {
-    color: var(--accent-color); /* Highlight links subtly */
+    color: var(--primary-color); /* Highlight on hover */
 }
 
 /* Section Highlights */
 section {
-    background-color: var(--background-color);
-    color: var(--text-color-dark);
+    background-color: var(--neutral-color);
+    color: var(--text-dark);
     padding: 2rem;
     border-radius: 10px;
 }
 
 /* Cards */
 .card {
-    background-color: var(--background-color);
+    background-color: var(--secondary-color);
     border: 2px solid var(--primary-color);
     border-radius: 10px;
     padding: 1rem;
-    color: var(--text-color-dark);
+    color: var(--text-dark);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .card:hover {
-    background-color: var(--accent-color); /* Subtle highlight on hover */
-    color: var(--text-color-dark);
+    background-color: var(--primary-color); /* Highlight on hover */
+    color: var(--accent-color);
+}
+
+/* Card Title */
+.card h3 {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.card p {
+    color: var(--text-dark);
 }
 
 /* Footer */
 footer {
-    background-color: var(--secondary-color);
-    color: var(--text-color-light);
+    background-color: var(--accent-color);
+    color: var(--text-light);
     text-align: center;
     padding: 1rem;
-    font-size: 0.9rem;
 }
 
 footer a {
-    color: var(--accent-color);
+    color: var(--primary-color);
 }
 
 footer a:hover {
-    color: var(--text-color-light);
+    color: var(--neutral-color);
 }
 
 /* Headings */
 h1, h2, h3 {
-    color: var(--primary-color);
+    color: var(--accent-color);
 }
 
-h1 span, h2 span {
-    color: var(--accent-color); /* Accent on specific parts of headings */
+/* Lists */
+ul {
+    list-style: none;
+    padding: 0;
 }
 
-/* Cards Title Accent */
-.card-title {
-    color: var(--primary-color);
-    font-weight: bold;
+li {
+    color: var(--text-dark);
+    margin: 0.5rem 0;
 }
 
-.card-title span {
-    color: var(--accent-color); /* Subtle highlight for specific words */
+/* Forms */
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--accent-color);
+    border-radius: 5px;
+    margin-bottom: 1rem;
 }
 
-/* Minimal use of FAD643 across layout */
+input:focus, textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 5px var(--primary-color);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 90%;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
