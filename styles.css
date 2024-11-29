@@ -36,6 +36,8 @@ main {
     padding: 1.5rem;
     text-align: center;
     transition: transform 0.2s, box-shadow 0.2s;
+    margin: 1rem auto;
+    max-width: 600px;
 }
 
 .card:hover {
@@ -83,17 +85,21 @@ ul li {
     background-color: #4A3225;
 }
 
-/* Fixed Contrast Element */
-div.player-emotion {
-    background-color: #4A3225;
-    color: #FFFFFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
+/* Image Styling */
+img {
+    max-width: 100%;
+    height: auto;
     border-radius: 8px;
     margin: 1rem 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Mission Section */
+.mission-section {
+    background-color: #F9DC5C;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    color: #4A3225;
 }
 
 /* Footer */

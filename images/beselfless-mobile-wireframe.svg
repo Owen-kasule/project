@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 375 1300"
+   version="1.1"
+   id="svg24"
+   sodipodi:docname="beselfless-mobile-wireframe.svg"
+   inkscape:export-filename="beselfless-mobile-wireframe01.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs24" />
+  <sodipodi:namedview
+     id="namedview24"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.95384615"
+     inkscape:cx="179.79839"
+     inkscape:cy="561.93548"
+     inkscape:window-width="1600"
+     inkscape:window-height="831"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg24" />
+  <rect
+     width="375"
+     height="1300"
+     fill="#fff"
+     id="rect1" />
+  <!-- Header -->
+  <rect
+     x="20"
+     y="20"
+     width="40"
+     height="40"
+     fill="#ccc"
+     id="rect2" />
+  <text
+     x="70"
+     y="45"
+     font-size="16"
+     id="text2">BeSelfless</text>
+  <rect
+     x="315"
+     y="20"
+     width="40"
+     height="40"
+     fill="#ccc"
+     id="rect3" />
+  <!-- Hamburger Menu -->
+  <g
+     transform="translate(315, 20)"
+     id="g6">
+    <rect
+       x="0"
+       y="0"
+       width="40"
+       height="40"
+       fill="#ccc"
+       id="rect4" />
+    <line
+       x1="10"
+       y1="15"
+       x2="30"
+       y2="15"
+       stroke="#fff"
+       stroke-width="3"
+       id="line4" />
+    <line
+       x1="10"
+       y1="20"
+       x2="30"
+       y2="20"
+       stroke="#fff"
+       stroke-width="3"
+       id="line5" />
+    <line
+       x1="10"
+       y1="25"
+       x2="30"
+       y2="25"
+       stroke="#fff"
+       stroke-width="3"
+       id="line6" />
+  </g>
+  <!-- Hero Section -->
+  <rect
+     x="20"
+     y="80"
+     width="335"
+     height="220"
+     fill="#f2f2f2"
+     id="rect6" />
+  <text
+     x="40"
+     y="180"
+     font-size="20"
+     id="text6">Lorem ipsum dolor sit amet</text>
+  <rect
+     x="40"
+     y="220"
+     width="120"
+     height="40"
+     fill="#ff6b6b"
+     id="rect7" />
+  <text
+     x="55"
+     y="245"
+     font-size="14"
+     fill="#fff"
+     id="text7">Join Us</text>
+  <!-- About Section -->
+  <rect
+     x="20"
+     y="320"
+     width="160"
+     height="160"
+     fill="#f2f2f2"
+     id="rect8" />
+  <text
+     x="190"
+     y="360"
+     font-size="16"
+     id="text8">About BeSelfless</text>
+  <text
+     x="190"
+     y="390"
+     font-size="14px"
+     id="text9"><tspan
+       sodipodi:role="line"
+       id="tspan24"
+       x="190"
+       y="390">Lorem ipsum dolor sit</tspan><tspan
+       sodipodi:role="line"
+       id="tspan25"
+       x="190"
+       y="407.5">amet et delectus acco</tspan></text>
+  <rect
+     x="190"
+     y="430"
+     width="80"
+     height="30"
+     fill="#ff6b6b"
+     id="rect9" />
+  <text
+     x="205"
+     y="450"
+     font-size="12"
+     fill="#fff"
+     id="text10">Read more</text>
+  <!-- Programs Section -->
+  <text
+     x="20"
+     y="510"
+     font-size="16"
+     id="text11">Our Programs</text>
+  <rect
+     x="20"
+     y="540"
+     width="335"
+     height="220"
+     fill="#f2f2f2"
+     id="rect11" />
+  <text
+     x="40"
+     y="580"
+     font-size="14"
+     id="text12">Education Support</text>
+  <text
+     x="40"
+     y="600"
+     font-size="12"
+     id="text13">Lorem ipsum dolor sit amet et delectus accommodate.</text>
+  <rect
+     x="40"
+     y="630"
+     width="80"
+     height="30"
+     fill="#ff6b6b"
+     id="rect13" />
+  <text
+     x="50"
+     y="650"
+     font-size="12"
+     fill="#fff"
+     id="text14">Read more</text>
+  <!-- Success Stories Section -->
+  <text
+     x="20"
+     y="780"
+     font-size="16"
+     id="text15">Success Stories</text>
+  <rect
+     x="20"
+     y="810"
+     width="335"
+     height="160"
+     fill="#f2f2f2"
+     id="rect15" />
+  <text
+     x="40"
+     y="850"
+     font-size="14"
+     id="text16">Student Success Profile</text>
+  <text
+     x="40"
+     y="870"
+     font-size="12"
+     id="text17">Lorem ipsum dolor sit amet et delectus accommodate.</text>
+  <rect
+     x="40"
+     y="900"
+     width="80"
+     height="30"
+     fill="#ff6b6b"
+     id="rect17" />
+  <text
+     x="50"
+     y="920"
+     font-size="12"
+     fill="#fff"
+     id="text18">Read more</text>
+  <!-- Get Involved Section -->
+  <text
+     x="20"
+     y="1000"
+     font-size="16"
+     id="text19">Get Involved</text>
+  <rect
+     x="20"
+     y="1030"
+     width="335"
+     height="50"
+     fill="#f2f2f2"
+     id="rect19" />
+  <text
+     x="40"
+     y="1055"
+     font-size="14"
+     id="text20">Volunteer | Donate | Partner</text>
+  <!-- Footer -->
+  <rect
+     x="0"
+     y="1190"
+     width="375"
+     height="100"
+     fill="#f2f2f2"
+     id="rect20" />
+  <text
+     x="20"
+     y="1215"
+     font-size="12"
+     id="text21">© 2024 BeSelfless. All rights reserved.</text>
+  <text
+     x="20"
+     y="1235"
+     font-size="12"
+     id="text22">Contact Us</text>
+  <text
+     x="20"
+     y="1255"
+     font-size="12"
+     id="text23">Terms of Service</text>
+  <text
+     x="275"
+     y="1215"
+     font-size="12"
+     id="text24">Privacy Policy</text>
+</svg>
