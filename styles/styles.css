@@ -1,24 +1,21 @@
-/* ========================
-   Global Variables
-======================== */
+/* Global Variables */
 :root {
     --font-primary: 'Noto Sans', sans-serif;
     --font-secondary: 'Merriweather', serif;
 
-    /* Color Palette */
-    --color-primary: #F9DC5C; /* Navbar and Footer background */
-    --color-secondary: #FAE588; /* Hero Section background */
-    --color-accent: #805B10; /* Accent for buttons and highlights */
-    --color-background: #FDF8E1; /* Overall page background */
-    --color-card-bg: #FCEFB4; /* Background for feature cards */
-    --color-text: #4A3225; /* Text color */
-    --color-hover-bg: #4A322528; /* Background for hover effects */
-    --color-hover-text: #FFF; /* Hover text color */
+    /* Colors */
+    --color-primary: #F9DC5C;
+    --color-secondary: #FAE588;
+    --color-accent: #805B10;
+    --color-background: #FDF8E1;
+    --color-card-bg: #FCEFB4;
+    --color-text: #4A3225;
+    --color-hover-bg: #4A322528;
+    --color-hover-text: #fff;
+    --color-active-bg: #4A322550;
 }
 
-/* ========================
-   General Reset
-======================== */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -27,58 +24,68 @@
 
 body {
     font-family: var(--font-primary);
-    line-height: 1.6;
     background-color: var(--color-background);
     color: var(--color-text);
 }
 
-/* ========================
-   Header/Navbar
-======================== */
+/* Navbar */
 .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--color-primary);
     padding: 1rem 2rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Align logo and menu horizontally */
+    position: relative;
+    overflow: hidden;
 }
 
-/* Logo Styling */
 .logo img {
-    height: 60px; /* Standard logo height */
-    width: auto; /* Maintain aspect ratio */
+    height: 50px;
+    width: auto;
 }
 
-/* Navigation Menu */
 .nav-menu {
     display: flex;
-    align-items: center;
-    gap: 2rem; /* Space between menu items */
+    gap: 2rem;
+    position: relative;
 }
 
 .nav-link {
     text-decoration: none;
     color: var(--color-text);
     font-weight: bold;
+    position: relative;
+    z-index: 1;
     padding: 0.5rem 1rem;
-    border-radius: 5px;
-    transition: color 0.3s, background-color 0.3s;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* Hover Effect for Links */
+/* Active link styling */
+.nav-link.active {
+    background-color: var(--color-active-bg);
+    color: var(--color-hover-text);
+}
+
 .nav-link:hover {
     color: var(--color-hover-text);
     background-color: var(--color-hover-bg);
 }
 
-/* ========================
-   Hero Section
-======================== */
+/* Hover Effect Styling */
+.hover-effect {
+    position: absolute;
+    background-color: var(--color-hover-bg);
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out; /* Smooth transition */
+    opacity: 0;
+    pointer-events: none;
+    z-index: 0; /* Behind the nav links */
+}
+
 .hero {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     padding: 2rem;
     background-color: var(--color-secondary);
 }
@@ -90,8 +97,8 @@ body {
 }
 
 .hero-text p {
-    margin-bottom: 1.5rem;
     font-size: 1.2rem;
+    margin-bottom: 1.5rem;
 }
 
 .cta-button {
@@ -100,7 +107,6 @@ body {
     color: var(--color-hover-text);
     text-decoration: none;
     border-radius: 5px;
-    font-weight: bold;
     transition: background-color 0.3s;
 }
 
@@ -108,9 +114,33 @@ body {
     background-color: var(--color-text);
 }
 
-/* ========================
-   Footer
-======================== */
+.features {
+    text-align: center;
+    padding: 2rem;
+}
+
+.feature-cards {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.feature-card {
+    background-color: var(--color-card-bg);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.read-more {
+    text-decoration: none;
+    color: var(--color-accent);
+    font-weight: bold;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
 footer {
     background-color: var(--color-primary);
     text-align: center;
@@ -118,7 +148,7 @@ footer {
 }
 
 .last-modified {
-    margin-top: 1rem;
     font-size: 0.8rem;
     color: var(--color-text);
+    margin-top: 1rem;
 }
