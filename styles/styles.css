@@ -47,20 +47,19 @@ body {
     justify-content: space-between;
 }
 
-/* Navbar Logo Styling */
 .logo img {
-    height: 50px; /* Standard height */
-    width: auto; /* Maintain aspect ratio */
-    object-fit: contain; /* Prevent distortion */
-    margin-left: 1.5rem; /* Space between the logo and viewport */
+    height: 50px;
+    width: auto;
+    object-fit: contain;
 }
 
 /* Navigation Menu */
 .nav-menu {
     display: flex;
-    align-items: center;
-    gap: 2rem;
-    margin-right: 1.5rem;
+    justify-content: space-between; /* Space items evenly */
+    flex-grow: 1;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .nav-link {
@@ -75,72 +74,6 @@ body {
 .nav-link:hover {
     color: var(--color-hover-text);
     background-color: var(--color-hover-bg);
-}
-
-/* ========================
-   Hero Section
-======================== */
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem;
-    background-color: var(--color-secondary);
-}
-
-.hero-text h1 {
-    font-family: var(--font-secondary);
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.hero-text p {
-    margin-bottom: 1.5rem;
-    font-size: 1.2rem;
-}
-
-.cta-button {
-    padding: 0.8rem 1.5rem;
-    background-color: var(--color-accent);
-    color: var(--color-hover-text);
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
-
-.cta-button:hover {
-    background-color: var(--color-text);
-}
-
-/* ========================
-   Features Section
-======================== */
-.features {
-    text-align: center;
-    padding: 2rem;
-}
-
-.feature-cards {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.feature-card {
-    background-color: var(--color-card-bg);
-    padding: 1rem;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.read-more {
-    text-decoration: none;
-    color: var(--color-accent);
-    font-weight: bold;
-    margin-top: 1rem;
-    display: inline-block;
 }
 
 /* ========================
