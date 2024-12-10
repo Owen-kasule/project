@@ -17,61 +17,65 @@ body {
     background-color: #F9DC5C;
     padding: 1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden; /* Ensures the hover effect stays within the navbar */
 }
 
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+/* Add a hover background effect */
+.navbar::before {
+    content: '';
+    position: absolute;
+    width: 0; /* Start with no width */
+    height: 100%;
+    background-color: var(--color-hover-bg);
+    z-index: 0; /* Place below the nav links */
+    transition: all 0.3s ease; /* Smooth transition */
 }
 
-/* Navbar Logo Styling */
-.logo img {
-    height: auto; /* Adjust this height to keep the logo size consistent */
-    width: 70px; /* Maintain the aspect ratio */
-    object-fit: contain; /* Ensure the image fits within the specified height */
-    margin-left: 3rem; /* Add space between the logo and navigation items */
-}
-
+/* Navigation Menu */
 .nav-menu {
     display: flex;
-    align-items: center;
-    gap: 2rem;
-    margin-right: 9rem;
+    justify-content: space-around; /* Space items evenly */
+    flex-grow: 1;
+    position: relative; /* Position for z-index layering */
+    z-index: 1; /* Ensure links are above the background effect */
 }
 
 .nav-link {
     text-decoration: none;
-    color: #4A3225;
+    color: var(--color-text);
     font-weight: bold;
     padding: 0.5rem 1rem;
     border-radius: 5px;
-    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover effects */
+    position: relative;
+    z-index: 2; /* Place above the background */
+    transition: color 0.3s;
 }
 
+/* Hover effect for each nav-link */
 .nav-link:hover {
-    color: #fff;
-    background-color: #4a322528; /* Maintain hover background color */
+    color: var(--color-hover-text);
 }
 
-/* Hero Section */
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem;
-    background-color: #FAE588;
+.nav-menu:hover .nav-link {
+    color: var(--color-text); /* Reset all non-hovered items */
 }
 
-.hero-text h1 {
-    font-family: 'Merriweather', serif;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+/* Dynamic hover background follows cursor */
+.nav-menu:hover .nav-link:hover ~ .navbar::before {
+    width: 100%; /* Expand background width */
+    left: calc(10%); /* Adjust positioning dynamically */
 }
 
-.hero-text p {
-    margin-bottom: 1.5rem;
-    font-size: 1.2rem;
+/* Hover Effect Styling */
+.hover-effect {
+    position: absolute;
+    background-color: #4a322528; /* Same hover color */
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Smooth transition */
+    opacity: 0;
+    pointer-events: none; /* Prevent interference with clicks */
+    z-index: -1; /* Keep it behind the text */
 }
 
 .cta-button {
@@ -128,4 +132,3 @@ footer {
     font-size: 0.8rem;
     color: #4A3225;
 }
-
