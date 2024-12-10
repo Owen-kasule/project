@@ -25,10 +25,6 @@ body {
     justify-content: space-between;
 }
 
-.logo img {
-    width: 150px; /* Standard reasonable size for logo */
-}
-
 .nav-menu {
     display: flex;
     align-items: center;
@@ -46,6 +42,12 @@ body {
     color: #805B10;
 }
 
+.last-modified {
+    font-size: 0.8rem;
+    color: #805B10;
+    margin-left: 1rem;
+}
+
 /* Hero Section */
 .hero {
     display: flex;
@@ -53,6 +55,10 @@ body {
     justify-content: space-between;
     padding: 2rem;
     background-color: #FAE588;
+}
+
+.hero-text {
+    max-width: 50%;
 }
 
 .hero-text h1 {
@@ -80,43 +86,57 @@ body {
     background-color: #4A3225;
 }
 
-/* Features Section */
-.features {
-    text-align: center;
-    padding: 2rem;
-}
-
-.feature-cards {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.feature-card {
-    background-color: #FCEFB4;
-    padding: 1rem;
+.hero-image {
+    max-width: 40%;
     border-radius: 10px;
+}
+
+/* Programs Section */
+.programs {
+    padding: 2rem;
     text-align: center;
+}
+
+.programs h2 {
+    font-family: 'Merriweather', serif;
+    margin-bottom: 2rem;
+}
+
+.program-cards {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.program-card {
+    background-color: #FCEFB4;
+    padding: 1.5rem;
+    border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.program-card:hover {
+    transform: translateY(-5px);
 }
 
 .read-more {
-    text-decoration: none;
-    color: #805B10;
-    font-weight: bold;
-    margin-top: 1rem;
     display: inline-block;
+    margin-top: 1rem;
+    color: #4A3225;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.read-more:hover {
+    color: #805B10;
 }
 
 /* Footer */
 footer {
     background-color: #F9DC5C;
     text-align: center;
-    padding: 2rem;
-}
-
-.last-modified {
-    margin-top: 1rem;
-    font-size: 0.8rem;
-    color: #4A3225;
+    padding: 1rem;
+    font-size: 0.9rem;
 }
