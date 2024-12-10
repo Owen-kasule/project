@@ -1,4 +1,24 @@
-/* General Reset */
+/* ========================
+   Global Variables
+======================== */
+:root {
+    --font-primary: 'Noto Sans', sans-serif;
+    --font-secondary: 'Merriweather', serif;
+
+    /* Color Palette */
+    --color-primary: #F9DC5C; /* Navbar and Footer */
+    --color-secondary: #FAE588; /* Hero Section */
+    --color-accent: #805B10; /* Buttons and highlights */
+    --color-background: #FDF8E1; /* Page background */
+    --color-card-bg: #FCEFB4; /* Feature card background */
+    --color-text: #4A3225; /* Primary text color */
+    --color-hover-bg: #4a322565; /* Navigation hover background */
+    --color-hover-text: #fff; /* Hover text color */
+}
+
+/* ========================
+   General Reset
+======================== */
 * {
     margin: 0;
     padding: 0;
@@ -6,15 +26,17 @@
 }
 
 body {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: var(--font-primary);
     line-height: 1.6;
-    background-color: #FDF8E1;
-    color: #4A3225;
+    background-color: var(--color-background);
+    color: var(--color-text);
 }
 
-/* Header/Navbar */
+/* ========================
+   Header/Navbar
+======================== */
 .navbar {
-    background-color: #F9DC5C;
+    background-color: var(--color-primary);
     padding: 1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -25,44 +47,49 @@ body {
     justify-content: space-between;
 }
 
+/* Navbar Logo Styling */
+.logo img {
+    height: 50px; /* Standard height */
+    width: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Prevent distortion */
+    margin-left: 1.5rem; /* Space between the logo and viewport */
+}
+
+/* Navigation Menu */
 .nav-menu {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
+    margin-right: 1.5rem;
 }
 
 .nav-link {
     text-decoration: none;
-    color: #4A3225;
+    color: var(--color-text);
     font-weight: bold;
-    transition: color 0.3s;
+    transition: color 0.3s, background-color 0.3s;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
 }
 
 .nav-link:hover {
-    color: #805B10;
+    color: var(--color-hover-text);
+    background-color: var(--color-hover-bg);
 }
 
-.last-modified {
-    font-size: 0.8rem;
-    color: #805B10;
-    margin-left: 1rem;
-}
-
-/* Hero Section */
+/* ========================
+   Hero Section
+======================== */
 .hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 2rem;
-    background-color: #FAE588;
-}
-
-.hero-text {
-    max-width: 50%;
+    background-color: var(--color-secondary);
 }
 
 .hero-text h1 {
-    font-family: 'Merriweather', serif;
+    font-family: var(--font-secondary);
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
@@ -74,8 +101,8 @@ body {
 
 .cta-button {
     padding: 0.8rem 1.5rem;
-    background-color: #805B10;
-    color: #fff;
+    background-color: var(--color-accent);
+    color: var(--color-hover-text);
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
@@ -83,60 +110,50 @@ body {
 }
 
 .cta-button:hover {
-    background-color: #4A3225;
+    background-color: var(--color-text);
 }
 
-.hero-image {
-    max-width: 40%;
-    border-radius: 10px;
-}
-
-/* Programs Section */
-.programs {
-    padding: 2rem;
+/* ========================
+   Features Section
+======================== */
+.features {
     text-align: center;
+    padding: 2rem;
 }
 
-.programs h2 {
-    font-family: 'Merriweather', serif;
-    margin-bottom: 2rem;
-}
-
-.program-cards {
+.feature-cards {
     display: flex;
-    gap: 2rem;
     justify-content: center;
+    gap: 2rem;
 }
 
-.program-card {
-    background-color: #FCEFB4;
-    padding: 1.5rem;
+.feature-card {
+    background-color: var(--color-card-bg);
+    padding: 1rem;
     border-radius: 10px;
+    text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-}
-
-.program-card:hover {
-    transform: translateY(-5px);
 }
 
 .read-more {
-    display: inline-block;
-    margin-top: 1rem;
-    color: #4A3225;
     text-decoration: none;
+    color: var(--color-accent);
     font-weight: bold;
-    transition: color 0.3s;
+    margin-top: 1rem;
+    display: inline-block;
 }
 
-.read-more:hover {
-    color: #805B10;
-}
-
-/* Footer */
+/* ========================
+   Footer
+======================== */
 footer {
-    background-color: #F9DC5C;
+    background-color: var(--color-primary);
     text-align: center;
-    padding: 1rem;
-    font-size: 0.9rem;
+    padding: 2rem;
+}
+
+.last-modified {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: var(--color-text);
 }

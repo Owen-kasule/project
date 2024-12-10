@@ -15,11 +15,13 @@ body {
 /* Header/Navbar */
 .navbar {
     background-color: #F9DC5C;
-    padding: 1rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.container {
+    padding: 1rem;document.addEventListener('DOMContentLoaded', () => {
+        // Display the last modified date
+        const lastModifiedSpan = document.getElementById('last-modified');
+        const lastModified = document.lastModified;
+        lastModifiedSpan.textContent = `Last Modified: ${lastModified}`;
+    });
+    .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
