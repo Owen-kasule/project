@@ -51,53 +51,14 @@ body {
     width: auto;
 }
 
-.nav-menu {
-    display: flex;
-    gap: 2rem;
-    position: relative;
-}
-
-.nav-link {
-    text-decoration: none;
-    color: var(--color-text);
-    font-weight: bold;
-    position: relative;
-    z-index: 1;
-    padding: 0.5rem 1rem;
-    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-}
-
-/* Active Link Styling */
-.nav-link.active {
-    background-color: var(--color-active-bg);
-    color: var(--color-hover-text);
-}
-
-/* Hover Styling */
-.nav-link:hover {
-    color: var(--color-hover-text);
-    background-color: var(--color-hover-bg);
-}
-
-/* Hover Effect Styling */
-.hover-effect {
-    position: absolute;
-    background-color: var(--color-hover-bg);
-    border-radius: 5px;
-    transition: all 0.5s ease-in-out;
-    opacity: 0;
-    pointer-events: none;
-    z-index: 0; /* Behind the nav links */
-}
-
-/* Responsive Navbar */
 .menu-toggle {
     display: none;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     background: none;
     border: none;
     cursor: pointer;
     color: var(--color-text);
+    z-index: 10; /* Ensure it is above the nav menu */
 }
 
 .nav-menu {
@@ -125,13 +86,26 @@ body {
     transition: color 0.3s ease, background-color 0.3s ease;
 }
 
+/* Active Link Styling */
 .nav-link.active {
     background-color: var(--color-active-bg);
     color: var(--color-hover-text);
 }
 
 .nav-link:hover {
+    color: var(--color-hover-text);
     background-color: var(--color-hover-bg);
+}
+
+/* Hover Effect Styling */
+.hover-effect {
+    position: absolute;
+    background-color: var(--color-hover-bg);
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 0; /* Behind the nav links */
 }
 
 /* Hamburger menu only for smaller screens */
