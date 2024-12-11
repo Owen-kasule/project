@@ -70,12 +70,22 @@ body {
 .nav-menu.active {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
     background-color: var(--color-primary);
-    width: 100%;
-    padding: 1rem 0;
+    width: 60%; /* Pop-up menu width */
+    height: 100%; /* Full height for vertical menu */
+    padding: 2rem 1rem;
+    box-shadow: -4px 0 6px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    border-radius: 0 0 8px 8px; /* Rounded bottom corners */
+    z-index: 20; /* Above other content */
+    transform: translateX(100%); /* Initially hidden */
+    transition: transform 0.3s ease-in-out; /* Smooth slide-in effect */
+}
+
+.nav-menu.active.show {
+    transform: translateX(0); /* Slide-in on toggle */
 }
 
 .nav-link {
@@ -119,6 +129,10 @@ body {
     }
 
     .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu.active.show {
         display: flex;
     }
 

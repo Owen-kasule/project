@@ -52,7 +52,19 @@ document.addEventListener('DOMContentLoaded', () => {
     // Hamburger menu functionality
     const menuToggle = document.querySelector('.menu-toggle');
     menuToggle.addEventListener('click', () => {
-        const navMenu = document.querySelector('.nav-menu');
         navMenu.classList.toggle('active');
+        navMenu.classList.toggle('show'); // Ensure the slide-in effect applies
+    });
+
+    // Close the pop-up menu when clicking outside
+    document.addEventListener('click', e => {
+        if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+            navMenu.classList.remove('active', 'show');
+        }
+    });
+
+    // Prevent menu from closing when clicking inside
+    navMenu.addEventListener('click', e => {
+        e.stopPropagation();
     });
 });
