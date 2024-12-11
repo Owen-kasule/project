@@ -76,7 +76,7 @@ body {
     background-color: var(--color-primary);
     width: 30%; /* Pop-up menu width */
     height: 40%; /* Full height for vertical menu */
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     box-shadow: -4px 0 6px rgba(0, 0, 0, 0.2); /* Shadow for depth */
     border-radius: 0 0 8px 8px; /* Rounded bottom corners */
     z-index: 20; /* Above other content */
