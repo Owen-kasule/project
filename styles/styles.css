@@ -1,21 +1,25 @@
-/* Global Variables */
+/* ==============================
+   Global Variables
+============================== */
 :root {
     --font-primary: 'Noto Sans', sans-serif;
     --font-secondary: 'Merriweather', serif;
 
     /* Colors */
-    --color-primary: #F9DC5C;
-    --color-secondary: #FAE588;
-    --color-accent: #805B10;
-    --color-background: #FDF8E1;
-    --color-card-bg: #FCEFB4;
-    --color-text: #4A3225;
-    --color-hover-bg: #4A322528;
-    --color-hover-text: #fff;
-    --color-active-bg: #4A322550;
+    --color-primary: #F9DC5C; /* Navbar and Footer */
+    --color-secondary: #FAE588; /* Hero Section */
+    --color-accent: #805B10; /* Buttons and Highlights */
+    --color-background: #FDF8E1; /* Page Background */
+    --color-card-bg: #FCEFB4; /* Feature Card Background */
+    --color-text: #4A3225; /* Primary Text Color */
+    --color-hover-bg: #4A322528; /* Hover Background */
+    --color-hover-text: #fff; /* Hover Text Color */
+    --color-active-bg: #4A322550; /* Active Link Background */
 }
 
-/* Reset */
+/* ==============================
+   Reset
+============================== */
 * {
     margin: 0;
     padding: 0;
@@ -26,9 +30,12 @@ body {
     font-family: var(--font-primary);
     background-color: var(--color-background);
     color: var(--color-text);
+    line-height: 1.6;
 }
 
-/* Navbar */
+/* ==============================
+   Navbar
+============================== */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -42,16 +49,6 @@ body {
 .logo img {
     height: 50px;
     width: auto;
-}
-
-/* Menu Toggle */
-.menu-toggle {
-    display: none;
-    font-size: 1.5rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: var(--color-text);
 }
 
 .nav-menu {
@@ -70,17 +67,19 @@ body {
     transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
+/* Active Link Styling */
 .nav-link.active {
     background-color: var(--color-active-bg);
     color: var(--color-hover-text);
 }
 
+/* Hover Styling */
 .nav-link:hover {
     color: var(--color-hover-text);
     background-color: var(--color-hover-bg);
 }
 
-/* Hover Effect */
+/* Hover Effect Styling */
 .hover-effect {
     position: absolute;
     background-color: var(--color-hover-bg);
@@ -88,38 +87,86 @@ body {
     transition: all 0.5s ease-in-out;
     opacity: 0;
     pointer-events: none;
-    z-index: 0;
+    z-index: 0; /* Behind the nav links */
 }
 
-/* Responsive Navbar */
-@media screen and (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
+/* ==============================
+   Hero Section
+============================== */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--color-secondary);
+}
 
-    .nav-menu {
-        display: none;
-        flex-direction: column;
-        background-color: var(--color-primary);
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        z-index: 1000;
-        padding: 1rem 0;
-    }
+.hero-text h1 {
+    font-family: var(--font-secondary);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
 
-    .nav-menu.active {
-        display: flex;
-    }
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
 
-    .nav-link {
-        text-align: center;
-        padding: 0.8rem 0;
-        border-bottom: 1px solid var(--color-hover-bg);
-    }
+.cta-button {
+    padding: 0.8rem 1.5rem;
+    background-color: var(--color-accent);
+    color: var(--color-hover-text);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
 
-    .nav-link:last-child {
-        border-bottom: none;
-    }
+.cta-button:hover {
+    background-color: var(--color-text);
+}
+
+/* ==============================
+   Features Section
+============================== */
+.features {
+    text-align: center;
+    padding: 2rem;
+}
+
+.feature-cards {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.feature-card {
+    background-color: var(--color-card-bg);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.read-more {
+    text-decoration: none;
+    color: var(--color-accent);
+    font-weight: bold;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+/* ==============================
+   Footer
+============================== */
+footer {
+    background-color: var(--color-primary);
+    text-align: center;
+    padding: 2rem;
+}
+
+.last-modified {
+    font-size: 0.8rem;
+    color: var(--color-text);
+    margin-top: 1rem;
 }

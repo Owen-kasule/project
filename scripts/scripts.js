@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Create hover effect
+    // Create hover effect for navigation links
     const navMenu = document.querySelector('.nav-menu');
     const hoverEffect = document.createElement('div');
     hoverEffect.classList.add('hover-effect');
@@ -19,6 +19,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     links.forEach(link => {
         link.addEventListener('mouseenter', e => {
+            const activeLink = document.querySelector('.nav-link.active');
+            // Temporarily remove the active class from the active link
+            if (activeLink) {
+                activeLink.classList.remove('active');
+            }
+
             const rect = e.target.getBoundingClientRect();
             hoverEffect.style.width = `${rect.width}px`;
             hoverEffect.style.height = `${rect.height}px`;
@@ -29,12 +35,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
         link.addEventListener('mouseleave', () => {
             hoverEffect.style.opacity = '0';
-        });
-    });
 
-    // Handle menu toggle
-    const menuToggle = document.querySelector('.menu-toggle');
-    menuToggle.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
+            // Restore the active class to the active link after hover
+            const activeLink = document.querySelector('.nav-link.active');
+            if (!activeLink) {
+                const originalActiveLink = [...links].find(link =>
+                    link.href === window.location.href
+                );
+                if (originalActiveLink) {
+                    originalActiveLink.classList.add('active');
+                }
+            }
+        });
     });
 });
