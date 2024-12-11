@@ -19,26 +19,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
     links.forEach(link => {
         link.addEventListener('mouseenter', e => {
+            const activeLink = document.querySelector('.nav-link.active');
+            // Temporarily remove the active class from the active link
+            if (activeLink) {
+                activeLink.classList.remove('active');
+            }
+
             const rect = e.target.getBoundingClientRect();
             hoverEffect.style.width = `${rect.width}px`;
             hoverEffect.style.height = `${rect.height}px`;
             hoverEffect.style.left = `${rect.left - navMenu.getBoundingClientRect().left}px`;
             hoverEffect.style.top = `${rect.top - navMenu.getBoundingClientRect().top}px`;
             hoverEffect.style.opacity = '1';
-
-            // Temporarily remove background from the active link
-            if (link.classList.contains('active')) {
-                link.classList.remove('active-temp');
-            }
         });
 
         link.addEventListener('mouseleave', () => {
             hoverEffect.style.opacity = '0';
 
-            // Restore background to the active link if it was temporarily removed
+            // Restore the active class to the active link after hover
             const activeLink = document.querySelector('.nav-link.active');
-            if (activeLink && !activeLink.classList.contains('active-temp')) {
-                activeLink.classList.add('active-temp');
+            if (!activeLink) {
+                const originalActiveLink = [...links].find(link =>
+                    link.href === window.location.href
+                );
+                if (originalActiveLink) {
+                    originalActiveLink.classList.add('active');
+                }
             }
         });
     });
