@@ -216,6 +216,7 @@ body {
 /* ==============================
    Footer
 ============================== */
+
 /* Footer General Styles */
 footer {
     background-color: var(--color-primary);
@@ -225,6 +226,7 @@ footer {
     line-height: 1.5;
 }
 
+/* Footer Call-to-Action Section */
 .footer-cta {
     text-align: center;
     background-color: var(--color-secondary);
@@ -277,12 +279,19 @@ footer {
     color: var(--color-hover-text);
 }
 
+/* Footer Links Section */
 .footer-links {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 1.5rem;
     margin-bottom: 2rem;
+}
+
+.footer-column {
+    flex: 1;
+    max-width: 300px;
+    text-align: center; /* Center column text */
 }
 
 .footer-column h4 {
@@ -306,6 +315,33 @@ footer {
     opacity: 1;
 }
 
+/* Wider Margins on Large Screens */
+@media screen and (min-width: 1024px) {
+    .footer-links {
+        margin: 0 auto;
+        max-width: 70%;
+    }
+}
+
+/* Social Media Icons */
+.footer-social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer-social-icons .social-icon img {
+    width: 30px; /* Icon size */
+    height: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-social-icons .social-icon:hover img {
+    transform: scale(1.2); /* Zoom effect on hover */
+}
+
+/* Footer Bottom Section */
 .footer-bottom {
     text-align: center;
     font-size: 0.8rem;
@@ -313,9 +349,8 @@ footer {
     padding-top: 1rem;
 }
 
-
 .last-modified {
     font-size: 0.8rem;
     color: var(--color-text);
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 }
