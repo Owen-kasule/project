@@ -319,7 +319,7 @@ footer {
 .footer-social-icons {
     display: flex;
     justify-content: center;
-    gap: 1.5rem; /* Space between icons */
+    gap: 6rem; /* Space between icons */
     margin-bottom: 1rem; /* Adjusted spacing before the line */
 }
 
