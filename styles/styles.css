@@ -320,18 +320,19 @@ footer {
     display: flex;
     justify-content: center;
     gap: 1.5rem; /* Space between icons */
-    margin-bottom: 0.5rem; /* Place closer to the line */
+    margin-bottom: 1rem; /* Adjusted spacing before the line */
 }
 
-.footer-social-icons a {
-    color: var(--color-accent); /* Theme accent color for icons */
-    font-size: 1.5rem; /* Icon size */
-    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+.footer-social-icons .social-icon img {
+    width: 30px; /* Icon size */
+    height: 30px;
+    filter: brightness(0) sepia(1) saturate(500%) hue-rotate(-10deg); /* Apply theme color */
+    transition: transform 0.3s ease-in-out, filter 0.3s ease;
 }
 
-.footer-social-icons a:hover {
-    color: var(--color-text); /* Darker theme color on hover */
+.footer-social-icons .social-icon:hover img {
     transform: scale(1.1); /* Slight zoom effect */
+    filter: brightness(0.8); /* Slightly darken on hover */
 }
 
 /* Footer Bottom Section */
