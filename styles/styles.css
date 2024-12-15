@@ -285,7 +285,7 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
 }
 
 .footer-column {
@@ -326,13 +326,13 @@ footer {
 .footer-social-icons .social-icon img {
     width: 30px; /* Icon size */
     height: 30px;
-    filter: brightness(0) sepia(1) saturate(500%) hue-rotate(-10deg); /* Apply theme color */
+    /* filter: brightness(0) sepia(1) saturate(500%) hue-rotate(-10deg); Apply theme color */
     transition: transform 0.3s ease-in-out, filter 0.3s ease;
 }
 
 .footer-social-icons .social-icon:hover img {
     transform: scale(1.1); /* Slight zoom effect */
-    filter: brightness(0.8); /* Slightly darken on hover */
+    filter: brightness(0.6); /* Slightly darken on hover */
 }
 
 /* Footer Bottom Section */
