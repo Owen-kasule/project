@@ -1,124 +1,112 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Base Styles */
 body {
     font-family: 'Noto Sans', sans-serif;
-    line-height: 1.6;
+    color: #4A3225;
     background-color: #FDF8E1;
-    color: #4A3225;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Header/Navbar */
-.navbar {
+header {
     background-color: #F9DC5C;
-    padding: 1rem;document.addEventListener('DOMContentLoaded', () => {
-        // Display the last modified date
-        const lastModifiedSpan = document.getElementById('last-modified');
-        const lastModified = document.lastModified;
-        lastModifiedSpan.textContent = `Last Modified: ${lastModified}`;
-    });
-    .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo img {
-    width: 150px; /* Standard reasonable size for logo */
-}
-
-.nav-menu {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.nav-link {
-    text-decoration: none;
     color: #4A3225;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-.nav-link:hover {
-    color: #805B10;
-}
-
-/* Hero Section */
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem;
-    background-color: #FAE588;
-}
-
-.hero-text h1 {
+    padding: 1rem;
+    text-align: center;
     font-family: 'Merriweather', serif;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+    width: 100%;
 }
 
-.hero-text p {
-    margin-bottom: 1.5rem;
-    font-size: 1.2rem;
+main {
+    width: 100%;
+    max-width: 800px;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
-.cta-button {
-    padding: 0.8rem 1.5rem;
-    background-color: #805B10;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s;
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin: 1rem auto;
+    max-width: 600px;
 }
 
-.cta-button:hover {
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+h1, h2 {
+    font-family: 'Merriweather', serif;
+    color: #4A3225;
+}
+
+p, ul {
+    color: #4A3225;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin: 0.5rem 0;
+}
+
+/* Color Block Styling */
+.color-block {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+.color-highlight {
+    background-color: #F9DC5C;
+}
+
+.color-background {
+    background-color: #FDF8E1;
+}
+
+.color-text {
     background-color: #4A3225;
 }
 
-/* Features Section */
-.features {
-    text-align: center;
-    padding: 2rem;
+/* Image Styling */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1rem 0;
 }
 
-.feature-cards {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.feature-card {
-    background-color: #FCEFB4;
+/* Mission Section */
+.mission-section {
+    background-color: #F9DC5C;
     padding: 1rem;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.read-more {
-    text-decoration: none;
-    color: #805B10;
-    font-weight: bold;
-    margin-top: 1rem;
-    display: inline-block;
+    border-radius: 8px;
+    margin: 1rem 0;
+    color: #4A3225;
 }
 
 /* Footer */
 footer {
     background-color: #F9DC5C;
-    text-align: center;
-    padding: 2rem;
-}
-
-.last-modified {
-    margin-top: 1rem;
-    font-size: 0.8rem;
     color: #4A3225;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
 }
