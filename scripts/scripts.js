@@ -52,6 +52,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // Hover effect for navigation links
     links.forEach(link => {
         link.addEventListener('mouseenter', e => {
+            const activeLink = document.querySelector('.nav-link.active');
+            // Temporarily remove the active class from the active link
+            if (activeLink) {
+                activeLink.classList.remove('active');
+            }
+
             const rect = e.target.getBoundingClientRect();
             hoverEffect.style.width = `${rect.width}px`;
             hoverEffect.style.height = `${rect.height}px`;
@@ -62,6 +68,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
         link.addEventListener('mouseleave', () => {
             hoverEffect.style.opacity = '0';
+
+            // Restore the active class to the active link after hover
+            const activeLink = document.querySelector('.nav-link.active');
+            if (!activeLink) {
+                const originalActiveLink = [...links].find(link =>
+                    link.href === window.location.href
+                );
+                if (originalActiveLink) {
+                    originalActiveLink.classList.add('active');
+                }
+            }
         });
     });
 });
