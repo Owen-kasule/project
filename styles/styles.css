@@ -34,7 +34,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    padding-bottom: 10rem; /* Reserve space for footer height */
+    padding-bottom: 23rem;/* Reserve space for footer height */
 }
 
 /* ==============================
