@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Homepage for BeSelfless NGO">
+    <meta name="description" content="Contact BeSelfless - Reach out to us for inquiries or collaboration">
     <meta name="author" content="BeSelfless Team">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
     <script defer src="scripts/scripts.js"></script>
-    <title>BeSelfless - Empowering Lifelong Education</title>
+    <title>Contact Us - BeSelfless</title>
 </head>
 <body>
+    <!-- Navbar -->
     <header>
         <div class="navbar">
             <div class="logo">
@@ -22,40 +23,57 @@
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="about.html" class="nav-link">About</a>
                 <a href="programs.html" class="nav-link">Programs</a>
-                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
             </nav>
         </div>
     </header>
-    <main>
-        <section class="hero">
-            <div class="hero-text">
-                <h1>Nurturing Resilient Minds</h1>
-                <p>Empowering families and individuals through lifelong education and self-sufficiency.</p>
-                <a href="#programs" class="cta-button">Learn More</a>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <h1>Get in Touch</h1>
+        <p>We'd love to hear from you! Reach out for inquiries, collaboration, or support.</p>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-container">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Full Name" required>
             </div>
-            <img src="images/empower.jpg" alt="Empowerment Image" class="hero-image">
-        </section>
-        <section class="features">
-            <h2>Our Focus Areas</h2>
-            <div class="feature-cards">
-                <div class="feature-card">
-                    <h3>Mission</h3>
-                    <p>Empowering families through education and access to resources.</p>
-                    <a href="#" class="read-more">Read More</a>
-                </div>
-                <div class="feature-card">
-                    <h3>Vision</h3>
-                    <p>Nurturing resilient minds to lead communities.</p>
-                    <a href="#" class="read-more">Read More</a>
-                </div>
-                <div class="feature-card">
-                    <h3>Goal</h3>
-                    <p>Creating self-reliant communities with lasting impacts.</p>
-                    <a href="#" class="read-more">Read More</a>
-                </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Your Email Address" required>
             </div>
-        </section>
-    </main>
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="contact-faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="contact-faq-container">
+            <div class="contact-faq-item">
+                <h3>What services does BeSelfless provide?</h3>
+                <p>We empower families and individuals through lifelong education and self-sufficiency programs.</p>
+            </div>
+            <div class="contact-faq-item">
+                <h3>How can I support your mission?</h3>
+                <p>You can support us by donating, volunteering, or partnering with us for community projects.</p>
+            </div>
+            <div class="contact-faq-item">
+                <h3>How do I get involved with BeSelfless?</h3>
+                <p>Feel free to reach out using the contact form or explore the "Get Involved" section of our website.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <div class="footer-cta">
             <p>Join BeSelfless Today.</p>
@@ -101,7 +119,7 @@
             <a href="#" class="social-icon"><img src="images/linkedin_icon.png" alt="LinkedIn"></a>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 BeSelfless. All rights reserved.| Developed by Owen</p>
+            <p>&copy; 2024 BeSelfless. All rights reserved. | Developed by Owen</p>
             <p id="last-modified" class="last-modified"></p>
         </div>
     </footer>    
