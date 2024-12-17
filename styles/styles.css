@@ -5,16 +5,16 @@
     --font-primary: 'Noto Sans', sans-serif;
     --font-secondary: 'Merriweather', serif;
 
-    /* Updated Colors */
-    --color-primary: #D9B44A; /* Darker gold for Navbar and Footer */
-    --color-secondary: #F2D16B; /* Slightly darker Hero Section */
-    --color-accent: #6A4F1B; /* Darker brown for Buttons and Highlights */
-    --color-background: #FDF8E1; /* Unchanged Page Background */
-    --color-card-bg: #F9E4A9; /* Slightly darker Feature Card Background */
-    --color-text: #3C2C20; /* Darker text for improved contrast */
-    --color-hover-bg: #6A4F1B28; /* Updated Hover Background */
-    --color-hover-text: #FFFFFF; /* Unchanged Hover Text Color */
-    --color-active-bg: #6A4F1B50; /* Updated Active Link Background */
+    /* Colors */
+    --color-primary: #F9DC5C; /* Navbar and Footer */
+    --color-secondary: #FAE588; /* Hero Section */
+    --color-accent: #6B4516; /* Darker shade for Buttons and Highlights */
+    --color-background: #FDF8E1; /* Page Background */
+    --color-card-bg: #F8E4A0; /* Darker Feature Card Background */
+    --color-text: #3A2A1D; /* Darker Primary Text Color */
+    --color-hover-bg: #3A2A1D28; /* Hover Background */
+    --color-hover-text: #FFFFFF; /* White Hover Text Color */
+    --color-active-bg: #3A2A1D90; /* More contrast for Active Link Background */
 }
 
 
