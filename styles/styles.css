@@ -715,6 +715,20 @@ footer {
     text-align: center;
 }
 
+.about-history h2 {
+    font-family: var(--font-secondary);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-text);
+}
+
+.about-history p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: var(--color-text);
+}
+
 .about-history-icons {
     display: flex;
     justify-content: center;
@@ -722,14 +736,29 @@ footer {
 }
 
 .about-icon {
-    width: 80px;
-    height: 80px;
+    width: 80px; /* Fixed width */
+    height: 80px; /* Fixed height */
     background-color: var(--color-hover-bg);
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
+    border-radius: 50%; /* Circular background */
+    overflow: hidden; /* Ensures content stays within circle */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+    transition: transform 0.3s ease; /* Smooth hover effect */
 }
+
+.about-icon:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.about-icon img {
+    width: 100%; /* Ensures image fills the container */
+    height: 100%;
+    object-fit: contain; /* Image scales proportionally without distortion */
+    object-position: center; /* Keeps the focus centered */
+}
+
 
 /* ==============================
    About Team Section
