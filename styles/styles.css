@@ -621,11 +621,11 @@ footer {
 .contact-hero, .contact-form-container, .contact-faq {
     z-index: 1; /* Ensures sections layer correctly */
 }
-
 /* ==============================
    About Page Styles
 ============================== */
 
+/* Hero Section */
 .about-hero {
     display: flex;
     align-items: center;
@@ -707,7 +707,7 @@ footer {
 }
 
 /* ==============================
-   Existing About Page Styles Stay Intact
+   About History Section
 ============================== */
 
 .about-history {
@@ -725,33 +725,77 @@ footer {
     width: 80px;
     height: 80px;
     background-color: var(--color-hover-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
 }
+
+/* ==============================
+   About Team Section
+============================== */
 
 .about-team {
     padding: 3rem 2rem;
     text-align: center;
+    background-color: var(--color-background);
 }
 
 .about-team-container {
     display: flex;
-    gap: 2rem;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    gap: 2rem; /* Spacing between team cards */
     justify-content: center;
 }
 
 .about-team-card {
     background-color: var(--color-card-bg);
     border-radius: 8px;
-    padding: 1rem;
+    padding: 1.5rem;
     text-align: center;
+    max-width: 300px; /* Limits the width of the card */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+    transition: transform 0.3s ease; /* Hover effect for depth */
+}
+
+.about-team-card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
 }
 
 .about-team-img {
-    width: 80px;
-    height: 80px;
-    background-color: var(--color-hover-bg);
-    margin: 0 auto 1rem;
-    border-radius: 50%;
+    width: 120px; /* Designated size for images */
+    height: 120px; /* Fixed height */
+    margin: 0 auto 1rem; /* Center the image and add spacing */
+    border-radius: 50%; /* Circular shape */
+    overflow: hidden; /* Ensures image fits inside circular border */
+    background-color: var(--color-hover-bg); /* Fallback background color */
 }
+
+.about-team-img img {
+    width: 100%; /* Makes the image fill the container */
+    height: 100%;
+    object-fit: cover; /* Ensures the image scales proportionally without distortion */
+    object-position: center; /* Focuses the center of the image */
+}
+
+.about-team-name {
+    font-family: var(--font-secondary);
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--color-text);
+}
+
+.about-team-card p {
+    font-size: 1rem;
+    color: var(--color-text);
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* ==============================
+   About FAQ Section
+============================== */
 
 .about-faq {
     padding: 3rem 2rem;
@@ -769,4 +813,21 @@ footer {
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.about-faq-item:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.about-faq-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    color: var(--color-accent);
+}
+
+.about-faq-item p {
+    font-size: 1rem;
+    color: var(--color-text);
+    line-height: 1.5;
 }
