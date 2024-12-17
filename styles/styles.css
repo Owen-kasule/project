@@ -6,16 +6,17 @@
     --font-secondary: 'Merriweather', serif;
 
     /* Colors */
-    --color-primary: #F9DC5C; /* Navbar and Footer */
-    --color-secondary: #FAE588; /* Hero Section */
-    --color-accent: #805B10; /* Buttons and Highlights */
-    --color-background: #FDF8E1; /* Page Background */
-    --color-card-bg: #FCEFB4; /* Feature Card Background */
-    --color-text: #4A3225; /* Primary Text Color */
-    --color-hover-bg: #4A322528; /* Hover Background */
-    --color-hover-text: #fff; /* Hover Text Color */
-    --color-active-bg: #4A322550; /* Active Link Background */
+    --color-primary: #D9B23D; /* Updated Gold (Navbar and Footer) */
+    --color-secondary: #E5C253; /* Updated Hero Section */
+    --color-accent: #6C4E09; /* Darker Accent for Buttons and Highlights */
+    --color-background: #FDF8E1; /* Page Background (No Change) */
+    --color-card-bg: #F8E09B; /* Updated Feature Card Background */
+    --color-text: #3A291A; /* Darker Primary Text Color */
+    --color-hover-bg: #3A291A28; /* Updated Hover Background */
+    --color-hover-text: #FFFFFF; /* Hover Text Color (No Change) */
+    --color-active-bg: #3A291A50; /* Updated Active Link Background */
 }
+
 
 /* ==============================
    Reset
