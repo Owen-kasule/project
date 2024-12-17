@@ -34,7 +34,23 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    padding-top: 5rem;
     padding-bottom: 23rem;/* Reserve space for footer height */
+}
+
+/* ==============================
+   Main Section - Full Screen Mirror BG
+============================== */
+main {
+    flex: 1;
+    /* padding: 2rem; */
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.4) 100%);
+    backdrop-filter: blur(10px) saturate(150%);
+    -webkit-backdrop-filter: blur(10px) saturate(150%); /* Safari support */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    z-index: 1; /* Keeps main content above the footer */
+    position: relative;
 }
 
 /* ==============================
@@ -606,3 +622,86 @@ footer {
     z-index: 1; /* Ensures sections layer correctly */
 }
 
+
+/* ==============================
+   About Page Styles
+============================== */
+
+.about-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+    background-color: var(--color-secondary);
+}
+
+.about-hero-text h1 {
+    font-family: var(--font-secondary);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.about-hero-image img {
+    max-width: 300px;
+}
+
+.about-history {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.about-history-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.about-icon {
+    width: 80px;
+    height: 80px;
+    background-color: var(--color-hover-bg);
+}
+
+.about-team {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.about-team-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.about-team-card {
+    background-color: var(--color-card-bg);
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.about-team-img {
+    width: 80px;
+    height: 80px;
+    background-color: var(--color-hover-bg);
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+}
+
+.about-faq {
+    padding: 3rem 2rem;
+    background-color: var(--color-background);
+}
+
+.about-faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.about-faq-item {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
