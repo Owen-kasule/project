@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Homepage for BeSelfless NGO">
+    <meta name="description" content="Programs Page for BeSelfless NGO">
     <meta name="author" content="BeSelfless Team">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
     <script defer src="scripts/scripts.js"></script>
-    <title>BeSelfless - Empowering Lifelong Education</title>
+    <title>BeSelfless - Our Programs</title>
 </head>
 <body>
+    <!-- Header/Navbar -->
     <header>
         <div class="navbar">
             <div class="logo">
@@ -21,41 +22,81 @@
             <nav class="nav-menu">
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="about.html" class="nav-link">About</a>
-                <a href="programs.html" class="nav-link">Programs</a>
+                <a href="programs.html" class="nav-link active">Programs</a>
                 <a href="contact.html" class="nav-link">Contact</a>
             </nav>
         </div>
     </header>
+
+    <!-- Main Content -->
     <main>
+        <!-- Hero Section -->
         <section class="hero">
             <div class="hero-text">
-                <h1>Nurturing Resilient Minds</h1>
-                <p>Empowering families and individuals through lifelong education and self-sufficiency.</p>
-                <a href="#programs" class="cta-button">Learn More</a>
+                <h1>Empowering Through Action</h1>
+                <p>Explore our diverse programs designed to foster education, growth, and self-sufficiency.</p>
+                <a href="#programs" class="cta-button">Explore Programs</a>
             </div>
             <img src="images/empower.jpg" alt="Empowerment Image" class="hero-image">
         </section>
-        <section class="features">
-            <h2>Our Focus Areas</h2>
-            <div class="feature-cards">
-                <div class="feature-card">
-                    <h3>Mission</h3>
-                    <p>Empowering families through education and access to resources.</p>
-                    <a href="#" class="read-more">Read More</a>
+
+        <!-- Program Highlights -->
+        <section class="programs-highlights">
+            <h2>Program Highlights</h2>
+            <div class="program-grid">
+                <div class="program-card">
+                    <!-- <img src="images/scholarship.jpg" alt="Scholarships"> -->
+                    <h3>Scholarship Programs</h3>
+                    <p>Providing tuition assistance to students from underserved communities.</p>
                 </div>
-                <div class="feature-card">
-                    <h3>Vision</h3>
-                    <p>Nurturing resilient minds to lead communities.</p>
-                    <a href="#" class="read-more">Read More</a>
+                <div class="program-card">
+                    <!-- <img src="images/workshop.jpg" alt="Workshops"> -->
+                    <h3>Skill Development Workshops</h3>
+                    <p>Hands-on workshops to teach life skills and professional expertise.</p>
                 </div>
-                <div class="feature-card">
-                    <h3>Goal</h3>
-                    <p>Creating self-reliant communities with lasting impacts.</p>
-                    <a href="#" class="read-more">Read More</a>
+                <div class="program-card">
+                    <!-- <img src="images/mentorship.jpg" alt="Mentorship"> -->
+                    <h3>Mentorship Initiatives</h3>
+                    <p>Guiding youth towards personal and professional success.</p>
                 </div>
             </div>
         </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <h2>What Our Beneficiaries Say</h2>
+            <div class="testimonial-container">
+                <div class="testimonial">
+                    <p>"Thanks to BeSelfless, I was able to complete my education and now have a brighter future."</p>
+                    <h4>- Sarah K, Scholarship Recipient</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"The mentorship program taught me essential skills and boosted my confidence to pursue my dreams."</p>
+                    <h4>- John M, Mentorship Program</h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Showcase -->
+        <!-- Video Section -->
+        <section class="program-video">
+            <h2 class="section-title">See How We Empower Communities</h2>
+            <p>Watch this video to learn more about how our programs make a difference in people's lives.</p>
+            <div class="video-container">
+                <iframe width="560" height="315" 
+                        src="https://www.youtube.com/embed/PEyOqEIIFfE?si=Nv_TFYAiR_K0mLCU&amp;start=50" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
     </main>
+
+    <!-- Footer -->
     <footer>
         <div class="footer-cta">
             <p>Join BeSelfless Today.</p>
@@ -104,6 +145,7 @@
             <p>&copy; 2024 BeSelfless. All rights reserved.| Developed by Owen</p>
             <p id="last-modified" class="last-modified"></p>
         </div>
-    </footer>    
+    </footer>
 </body>
 </html>
+
